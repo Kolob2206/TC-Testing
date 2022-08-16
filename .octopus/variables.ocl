@@ -3,3 +3,15 @@ variable "asdf" {
     value "asdf" {
     }
 }
+
+variable "2" {
+
+    value "3" {
+    }
+}
+
+variable "1" {
+
+    value "2" {
+    }
+}
