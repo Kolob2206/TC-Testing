@@ -13,5 +13,7 @@ variable "2" {
 variable "1" {
 
     value "2" {
+        channel = ["default"]
+        environment = ["dev"]
     }
 }
