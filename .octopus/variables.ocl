@@ -18,6 +18,5 @@ variable "You know you've been spending too much time in Powershell.." {
         environment = ["and-they-use-the-phrase"]
         machine = ["desktop-0ls4itn"]
         process = ["deployment-process"]
-        role = ["client"]
     }
 }
