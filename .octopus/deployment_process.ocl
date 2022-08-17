@@ -1,5 +1,5 @@
 step "run-a-script" {
-    name = "Run a Script"
+    name = "and they use"
     properties = {
         Octopus.Action.TargetRoles = "role"
     }
