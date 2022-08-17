@@ -1,5 +1,5 @@
 step "run-a-script" {
-    name = "and they use"
+    name = "script"
     properties = {
         Octopus.Action.TargetRoles = "role"
     }
@@ -7,6 +7,24 @@ step "run-a-script" {
     action {
         action_type = "Octopus.Script"
         environments = ["dev"]
+        properties = {
+            Octopus.Action.RunOnServer = "false"
+            Octopus.Action.Script.ScriptBody = "write-host 'hi'"
+            Octopus.Action.Script.ScriptSource = "Inline"
+            Octopus.Action.Script.Syntax = "PowerShell"
+        }
+        worker_pool_variable = ""
+    }
+}
+
+step "and-they-use" {
+    name = "and they use"
+    properties = {
+        Octopus.Action.TargetRoles = "client"
+    }
+
+    action {
+        action_type = "Octopus.Script"
         properties = {
             Octopus.Action.RunOnServer = "false"
             Octopus.Action.Script.ScriptBody = "write-host 'hi'"
