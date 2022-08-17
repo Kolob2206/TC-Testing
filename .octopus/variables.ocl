@@ -13,7 +13,11 @@ variable "2" {
 variable "1" {
 
     value "2" {
+        action = ["run-a-script"]
         channel = ["default"]
         environment = ["dev"]
+        machine = ["desktop-0ls4itn"]
+        process = ["deployment-process"]
+        role = ["client"]
     }
 }
