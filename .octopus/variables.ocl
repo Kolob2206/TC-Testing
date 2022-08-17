@@ -13,7 +13,7 @@ variable "2" {
 variable "You know you've been spending too much time in Powershell.." {
 
     value "When you get an email about a BBQ" {
-        action = ["run-a-script"]
+        action = ["and-they-use"]
         channel = ["the-phrase"]
         environment = ["and-they-use-the-phrase"]
         machine = ["desktop-0ls4itn", "devcloud"]
