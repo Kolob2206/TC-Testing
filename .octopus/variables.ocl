@@ -16,7 +16,7 @@ variable "You know you've been spending too much time in Powershell.." {
         action = ["and-they-use"]
         channel = ["the-phrase"]
         environment = ["get-together"]
-        machine = ["desktop-0ls4itn", "devcloud"]
+        machine = ["and-you-instantly", "wonder-what"]
         role = ["the cmdlet does..."]
     }
 }
